@@ -10,9 +10,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "15.5.4",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "next": "15.5.7",
+    "react": "19.1.2",
+    "react-dom": "19.1.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -22,7 +22,7 @@
     "@types/react-dom": "^19",
     "concurrently": "^9",
     "eslint": "^9",
-    "eslint-config-next": "15.5.4",
+    "eslint-config-next": "15.5.7",
     "open": "^10",
     "tailwindcss": "^4",
     "typescript": "5.9.3",
