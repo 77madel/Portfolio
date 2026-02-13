@@ -58,7 +58,7 @@ export default function Hero() {
           </div>
           <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-accent-gold overflow-hidden bg-foreground/10 flex items-center justify-center">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+              src=""
               alt="Madou KONE"
               width={288}
               height={288}
