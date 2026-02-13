@@ -21,7 +21,7 @@ export default function Hero() {
             </span>
             <div className="flex flex-col leading-tight text-xs font-semibold tracking-[0.18em] uppercase text-foreground/80">
               <span>Ans</span>
-              <span>d&apos;expérience</span>
+              <span>{"d'expérience"}</span>
             </div>
           </div>
           <div className="flex gap-3">
