@@ -170,7 +170,7 @@ export default function Projects() {
 
           <div className="relative rounded-3xl bg-white/70 border border-black/5 px-6 py-8 md:px-10 md:py-10">
             <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
-              {techLogos.map((tech, index) => (
+              {techLogos.map((tech) => (
                 <div
                   key={tech.name}
                   className="tech-logo flex items-center justify-center transition-transform duration-300 hover:scale-110"
