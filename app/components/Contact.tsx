@@ -66,7 +66,7 @@ export default function Contact() {
             Get in touch
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Let's work <span className="text-accent-gold">together?</span>
+            Let&apos;s work <span className="text-accent-gold">together?</span>
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto mb-6">
             A project, a mission or a quick question — drop me a line, I reply fast.
@@ -113,7 +113,7 @@ export default function Contact() {
                 <div className="text-center py-12">
                   <p className="text-accent-teal font-semibold text-lg mb-2">Message sent!</p>
                   <p className="text-foreground/70 text-sm">
-                    I'll get back to you at the email you provided as soon as possible.
+                    I&apos;ll get back to you at the email you provided as soon as possible.
                   </p>
                   <button
                     type="button"

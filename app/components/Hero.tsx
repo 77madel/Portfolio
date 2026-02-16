@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         {/* Left block: Hi! I'm / Madou KONE. / 02 YEARS / social */}
         <div className="lg:col-span-4 relative">
-          <p className="text-foreground/80 text-lg mb-1">Hi! I'm</p>
+          <p className="text-foreground/80 text-lg mb-1">Hi! I&apos;m</p>
           <h1 className="text-4xl md:text-5xl font-bold text-accent-gold mb-6">
             Madou KONE.
           </h1>
