@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const socialLinks = [
   { name: "Instagram", href: "#", icon: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.265.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" },
@@ -9,9 +8,9 @@ export default function Hero() {
   return (
     <section className="min-h-screen pt-28 pb-16 px-6 flex items-center">
       <div className="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        {/* Bloc gauche : Salut! je suis / Madou KONE. / 08 YEARS / réseaux */}
+        {/* Left block: Hi! I'm / Madou KONE. / 02 YEARS / social */}
         <div className="lg:col-span-4 relative">
-          <p className="text-foreground/80 text-lg mb-1">Salut ! je suis</p>
+          <p className="text-foreground/80 text-lg mb-1">Hi! I'm</p>
           <h1 className="text-4xl md:text-5xl font-bold text-accent-gold mb-6">
             Madou KONE.
           </h1>
@@ -20,8 +19,8 @@ export default function Hero() {
               02
             </span>
             <div className="flex flex-col leading-tight text-xs font-semibold tracking-[0.18em] uppercase text-foreground/80">
-              <span>Ans</span>
-              <span>{"d'expérience"}</span>
+              <span>Years</span>
+              <span>of experience</span>
             </div>
           </div>
           <div className="flex gap-3">
@@ -57,26 +56,22 @@ export default function Hero() {
             </svg>
           </div>
           <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-accent-gold overflow-hidden bg-foreground/10 flex items-center justify-center">
-            <Image
-              src=""
-              alt="Madou KONE"
-              width={288}
-              height={288}
-              className="w-full h-full object-cover"
-              priority
-            />
+            <span className="text-4xl md:text-5xl font-bold text-accent-gold/60" aria-hidden>
+              MK
+            </span>
+            {/* Replace with <Image src="/images/avatar.jpg" alt="Madou KONE" width={288} height={288} className="w-full h-full object-cover" priority /> when you have a photo */}
           </div>
         </div>
 
         {/* Bloc droit : slogan + carte avis + Creative Designer */}
         <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left">
           <p className="text-foreground/80 text-base md:text-lg mb-6 max-w-sm">
-            Je conçois des expériences simples, élégantes et efficaces, et j’adore ce que je fais.
+           I design simple, elegant, and effective experiences, and I love what I do.
           </p>
           <div className="bg-white rounded-xl shadow-lg border border-black/5 p-4 mb-8 inline-flex flex-col items-center lg:items-start">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-foreground/80 text-sm">12k avis sur</span>
-              <span className="flex text-accent-gold" aria-label="4.9 sur 5 étoiles">
+              <span className="text-foreground/80 text-sm">12k reviews on</span>
+              <span className="flex text-accent-gold" aria-label="4.9 out of 5 stars">
                 ★★★★★
               </span>
               <span className="text-foreground/80 text-sm font-medium">4.9</span>
@@ -92,8 +87,8 @@ export default function Hero() {
             </div>
           </div>
           <p className="font-cursive text-2xl md:text-3xl">
-            <span className="text-accent-teal">Designer </span>
-            <span className="text-foreground">créatif.</span>
+            <span className="text-accent-teal">Creative </span>
+            <span className="text-foreground">designer.</span>
           </p>
         </div>
       </div>

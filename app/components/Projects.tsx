@@ -5,39 +5,45 @@ import { useEffect, useState } from "react";
 
 const projects = [
   {
-    title: "MyLMS - plateforme e-learning",
+    title: "MyLMS - e-learning platform",
     description:
-      "Plateforme LMS complète et multi-rôles (Admin, Organisation, Instructeur, Étudiant) avec gestion des cours, chapitres, leçons, quiz, devoirs, certificats, webinaires, forums, messagerie et support.",
+      "Complete, multi-role LMS platform (Admin, Organization, Instructor, Student) with course management, chapters, lessons, quizzes, assignments, certificates, webinars, forums, messaging and support.",
     tech: ["Laravel", "MySQL", "Livewire", "REST API"],
-    place: "Projet personnel / open source",
+    place: "Personal / open source project",
     icon: "📚",
   },
-  {
-    title: "ProdisPro - marketplace mobile",
-    description:
-      "ProdisPro est une plateforme mobile innovante qui facilite les transactions entre acheteurs et vendeurs : publication d’annonces, paiement Mobile Money, messagerie intégrée, gestion des abonnements et suivi complet des transactions.",
-    tech: ["Flutter", "Laravel", "Mobile Money", "REST API"],
-    place: "Projet mobile / marketplace",
-    icon: "🛒",
+  { 
+    title: "ProdisPro - mobile marketplace", 
+    description: 
+    "ProdisPro is an innovative mobile platform that facilitates transactions between buyers and sellers: publication of advertisements, Mobile Money payment, integrated messaging, subscription management and complete transaction tracking.", 
+    tech: ["Flutter", "Laravel", "Mobile Money", "REST API"], 
+    place: "Mobile project / marketplace", 
+    icon: "🛒", 
   },
   {
-    title: "Gestion financière de coopératives (IA)",
-    description:
-      "Un outil numérique innovant conçu pour simplifier la gestion des finances et des adhérents au sein des coopératives informelles : suivi des cotisations, prêts, remboursements et audit automatisé des comptes grâce à l’IA avec LangChain.",
-    tech: ["Python", "React", "LangChain", "PostgreSQL"],
-    place: "Projet fintech / coopératives",
+    title: "Financial management of cooperatives (IA)", 
+    description: 
+    "An innovative digital tool designed to simplify the management of finances and members within informal cooperatives: monitoring of contributions, loans, reimbursements and automated audit of accounts using AI with LangChain.", 
+    tech: ["Python", "React", "LangChain", "PostgreSQL"], 
+    place: "Fintech / cooperative project", 
     icon: "📊",
   },
   {
-    title: "Réservation de tickets d'événements",
-    description: "Application web et mobile pour réserver et suivre les tickets d'événements. Expérience fluide côté utilisateur.",
+
+    title: "Event Ticket Booking",
+
+    description: "Web and mobile application for booking and tracking event tickets. Seamless user experience.",
+
     tech: ["Flutter", "React Native", "Node.js", "PostgreSQL"],
+
     place: "Web & mobile",
+
     icon: "🎫",
+
   },
   {
-    title: "Plateforme Orange Digital Center Mali",
-    description: "Plateforme centralisée pour les événements, formations, inscriptions et gestion des participants de l'ODC Mali.",
+    title: "Orange Digital Center Mali Platform",
+    description: "Centralized platform for events, training, registration and participant management at ODC Mali.",
     tech: ["Full Stack", "Angular", "Spring Boot", "Docker"],
     place: "Orange Digital Center Mali",
     icon: "🍊",
@@ -80,17 +86,17 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block text-accent-teal font-semibold text-sm uppercase tracking-wider mb-2">
-            Réalisations
+            Work
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Projets <span className="text-accent-gold">livrés</span>
+            Projects <span className="text-accent-gold">delivered</span>
           </h2>
           <p className="text-foreground/70 max-w-xl mx-auto">
-            Applications de gestion, réservation et plateformes — tirés de ton parcours réel.
+            Management apps, booking systems and platforms — from real experience.
           </p>
           <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent-teal/10 text-accent-teal px-4 py-2 text-sm font-medium">
             <span aria-hidden>🚀</span>
-            <span>{projects.length} projet{projects.length > 1 ? "s" : ""} réalisé{projects.length > 1 ? "s" : ""} · Références sur demande</span>
+            <span>{projects.length} project{projects.length > 1 ? "s" : ""} delivered · References on request</span>
           </div>
         </div>
 
@@ -141,7 +147,7 @@ export default function Projects() {
                 <button
                   key={project.title}
                   type="button"
-                  aria-label={`Aller au projet ${project.title}`}
+                  aria-label={`Go to project ${project.title}`}
                   onClick={() => goTo(index)}
                   className={`h-2.5 rounded-full transition-all ${
                     current === index
@@ -154,17 +160,17 @@ export default function Projects() {
           )}
         </div>
 
-        {/* Section Technologies maîtrisées - style bande de logos */}
+        {/* Tech stack - logo strip */}
         <div className="mt-24 md:mt-28">
           <div className="text-center mb-10">
             <span className="inline-block text-accent-teal font-semibold text-sm uppercase tracking-wider mb-2">
-              Stack technique
+              Tech stack
             </span>
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-              Technologies <span className="text-accent-gold">maîtrisées</span>
+              Technologies <span className="text-accent-gold">I use</span>
             </h3>
             <p className="text-foreground/60 text-sm max-w-md mx-auto">
-              Un écosystème d’outils modernes pour livrer des produits fiables.
+              A modern toolset to deliver reliable products.
             </p>
           </div>
 
