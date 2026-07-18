@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  // Fix OneDrive sync conflict with webpack filesystem cache
+  webpack: (config, { dev }) => {
+    if (dev) {
+      config.cache = false;
+    }
+    return config;
+  },
 };
 
 export default nextConfig;
