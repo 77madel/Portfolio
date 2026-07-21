@@ -44,6 +44,16 @@ const certificates = [
     color: "#f97316",
     icon: "⚙️",
   },
+  {
+    title: "Full Stack Web Development",
+    issuer: "Orange Digital Center",
+    date: "2024",
+    description: "Certificate of skills in front-end and back-end web development.",
+    link: "/images/cetifications/orange.jpg",
+    image: "/certificat.png",
+    color: "#f97316",
+    icon: "🖥️",
+  },
 ];
 
 export default function Certificates() {
